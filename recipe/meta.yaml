@@ -49,4 +49,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/dbt
     - rxm7706
