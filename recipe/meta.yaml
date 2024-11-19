@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("0.1a0") %}
 {% set name = "dbt-common" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dbt_common-{{ version }}.tar.gz
-  sha256: f65192ccee138515cbace7dfda14f58740e42903eab80948b6ed9a007e99075e
+  sha256: 2bc88b0bc81f13a84e95f3b46370f610658c2996ee0521d1b361901564d37f31
 
 build:
   noarch: python
