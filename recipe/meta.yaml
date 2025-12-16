@@ -1,5 +1,5 @@
 {% set name = "dbt-common" %}
-{% set version = "1.37.1" %}
+{% set version = "1.37.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dbt_common-{{ version }}.tar.gz
-  sha256: ddb8bffe71e31f11ef212d15238291ba2ea8c77090eab34bab51f03cb0092ad7
+  sha256: f83f2b4c1ed234ef38edc6817e0c2bd19f27c653bc1eb8b8411285fe670c2d3c
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - agate >=1.7.0,<1.10
     - colorama >=0.3.9,<0.5
-    - dbt-protos >=1.0.405,<2.0.0
+    - dbt-protos >=1.0.410,<2.0.0
     - deepdiff >=7.0,<9.0
     - isodate >=0.6,<0.8
     - jsonschema >=4.0,<5.0
