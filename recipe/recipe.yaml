@@ -43,7 +43,7 @@ tests:
       imports:
         - dbt_common
       pip_check: true
-      python_version: ${{ python_min }}.()
+      python_version: ${{ python_min }}.*
 
 about:
   summary: The shared common utilities that dbt-core and adapter implementations use
