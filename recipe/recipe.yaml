@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dbt-common
-  version: 1.37.2
+  version: "1.37.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dbt_common-${{ version }}.tar.gz
-  sha256: f83f2b4c1ed234ef38edc6817e0c2bd19f27c653bc1eb8b8411285fe670c2d3c
+  sha256: f99304cf93f549c09d302eb61d9b280748bbe24e2245e214189ea08b41196ec3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
