@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dbt-common
-  version: "1.38.0"
+  version: "1.39.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dbt_common-${{ version }}.tar.gz
-  sha256: 05f9c682c1c09b6a0ce79fe18dd7244a4549c3740329692bc19be9e7498f516f
+  sha256: 868256ab2b59328efdd455644172ad17303f3f6a78a015f06667e865e068d620
 
 build:
   number: 0
@@ -37,6 +37,7 @@ requirements:
     - python-dateutil >=2.0,<3.0
     - requests <3.0.0
     - typing_extensions >=4.4,<5.0
+    - opentelemetry-api >=1.26,<3.0
 
 tests:
   - python:
